@@ -2,3 +2,16 @@ server:
   port: 8080
   servlet:
     context-path: /esk-santander-dev-week-api
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/db_santander_dev_week
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    database-plataform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
